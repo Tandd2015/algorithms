@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Always Hungry Assignment</title>
+        <script>
+            function alwaysHungry(){ 
+                var arr = [];
+                var example = [9, "food", "food", 7];
+                var example1 = [9, 8, 7, 6];
+                var count = 0
+
+                arr = example;
+
+                for(var i = 0; i < arr.length; i++){	
+                    if(arr[i] === "food"){
+                        console.log("yummy");
+                    }
+                    if(arr[i] !== "food"){
+                        count++;
+                        if(count === arr.length){
+                            console.log("I'm hungry");
+                        }
+                    }
+
+                }
+
+            }
+            alwaysHungry();
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

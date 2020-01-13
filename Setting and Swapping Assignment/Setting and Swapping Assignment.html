@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Setting and Swapping Assignment</title>
+        <script>
+            function swapValue(myNumber, myName, temp){
+
+                temp = myName;
+                myName = myNumber;
+                myNumber = temp;
+                console.log(myNumber, myName);
+
+                temp = myNumber;
+                myNumber = myName;
+                myName = temp;
+                console.log(myNumber, myName);
+		    }
+		    swapValue(42, 'daniel', undefined);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

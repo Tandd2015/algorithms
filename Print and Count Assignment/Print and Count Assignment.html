@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Print and Count Assignment</title>
+        <script>
+            function printCount(){
+                var count = 0;
+
+                for(var print = 512; print <= 4096; print++){
+                    if(print % 5 === 0){
+                        count++;
+                        console.log(print);
+                    }
+                }
+                console.log(count);
+            }
+    		printCount();
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

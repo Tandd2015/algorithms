@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Leap Year Assignment</title>
+        <script>
+            function leapYear(){ 
+                var year = 2018;
+                var leapyear = 0;
+                
+                if(year % 4 === 0){
+                    if(year % 100 !== 0){
+                        year = leapyear;
+                    }
+                }				
+                else if(year % 4 === 0){
+                    if(year % 100 === 0){
+                        if(year % 400 === 0){
+                            year = leapyear;
+                        }
+                    }
+                }
+                console.log(leapyear);
+            }
+    		leapYear();
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Print One, Return Another Assignment</title>
+        <script>
+            function printOne(){
+                var arr = [];
+                var example = [-1, 3, 5, -5];
+
+                arr = example;
+
+                console.log(arr[arr.length - 2]);
+                for(var i = 0; i < arr.length; i++){
+                    if(arr[i] % 2 !== 0){
+                        return arr[i];
+                    }
+                }
+            }
+            printOne();
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

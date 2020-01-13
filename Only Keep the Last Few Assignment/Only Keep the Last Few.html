@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Only Keep the Last Few Assignment</title>
+    <script>
+        function lastFew_only(array, x){
+
+            for (var idx = array.length + 1; idx > 0; idx--){
+                if (array[x] >= array[idx]){
+                    array.shift();
+                }
+            }
+            return array;
+        }
+        lastFew_only([2,4,6,8,10], 3);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Countdown Assignment</title>
+        <script>
+            function countDown(){
+                var arr = [0, 1];
+                var newarr = [];
+
+                newarr.push(arr[1]);
+                arr.pop();
+                newarr.push(arr[0]);
+                arr.pop();
+
+                return newarr;
+            }
+            countDown();
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
